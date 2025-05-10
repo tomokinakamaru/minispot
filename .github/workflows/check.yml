@@ -13,8 +13,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ["21.7"]
-        python-version: ["3.11", "3.12"]
+        node-version: ["22.15"]
+        python-version: ["3.11", "3.12", "3.13"]
 
     steps:
       - uses: actions/checkout@v4
@@ -31,8 +31,10 @@ jobs:
 
       - run: pdm sync && sh kernel-install.sh
 
+      - run: pdm run jlpm install
+
       - run: pdm run jlpm playwright install --with-deps chromium
 
-      - run: pdm run lint
+      - run: pdm run jlpm playwright test
 
-      - run: pdm run test
+      - run: pdm run lint

@@ -1,6 +1,6 @@
 {
   "lockedExtensions": {
-    "redspot": true
+    "minispot": true
   },
   "disabledExtensions": {
     "@jupyter-notebook/console-extension": true,
@@ -13,7 +13,6 @@
     "@jupyterlab/fileeditor-extension": true,
     "@jupyterlab/metadataform-extension": true,
     "@jupyterlab/notebook-extension:update-raw-mimetype": true,
-    "@jupyterlab/settingeditor-extension": true,
-    "nbdime-jupyterlab": true
+    "@jupyterlab/settingeditor-extension": true
   }
 }

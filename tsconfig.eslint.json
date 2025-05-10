@@ -1,6 +1,6 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
-  "include": ["redspot-frontend/*", "tests/*", "*.ts"],
+  "include": ["minispot-frontend/*", "tests/*", "*.ts"],
   "compilerOptions": {
     "outDir": "build"
   }

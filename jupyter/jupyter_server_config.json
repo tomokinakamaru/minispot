@@ -3,13 +3,13 @@
     "ip": "*",
     "allow_root": true,
     "answer_yes": true,
+    "autoreload": true,
     "open_browser": false,
+    "kernel_manager_class": "minispot.kernelmanager.KernelManager",
     "jpserver_extensions": {
-      "jupyter_lsp": true,
-      "jupyter_server_mathjax": true,
-      "jupyter_server_terminals": false,
       "jupyterlab": false,
-      "nbdime": false,
+      "jupyter_server_terminals": false,
+      "jupyter_lsp": true,
       "notebook": true,
       "notebook_shim": false
     }

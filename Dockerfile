@@ -1,5 +1,5 @@
 # see https://www.python.org/doc/versions/
-ARG PYTHON_VERSION=3.12.7
+ARG PYTHON_VERSION=3.13.3
 
 # -------------------------------------------------------------------------------------------------
 FROM python:${PYTHON_VERSION} AS development
@@ -8,7 +8,7 @@ FROM python:${PYTHON_VERSION} AS development
 ARG N_VERSION=10.1.0
 
 # see https://nodejs.org/en/about/previous-releases
-ARG NODE_VERSION=22.11.0
+ARG NODE_VERSION=22.15.0
 
 RUN export URL=https://raw.githubusercontent.com/tj/n/v${N_VERSION}/bin/n && \
     curl -L $URL | bash -s ${NODE_VERSION}
@@ -47,6 +47,4 @@ RUN export PYTHONDONTWRITEBYTECODE=1 && \
 
 WORKDIR "/workdir"
 
-ENTRYPOINT [ "redspot" ]
-
-CMD [ "record" ]
+ENTRYPOINT [ "minispot" ]

@@ -17,8 +17,7 @@
         "ms-python.python",
         "qwtel.sqlite-viewer",
         "tamasfe.even-better-toml",
-        "timonwong.shellcheck",
-        "ryanluker.vscode-coverage-gutters"
+        "timonwong.shellcheck"
       ],
       "settings": {
         "[python]": {
@@ -27,7 +26,6 @@
         "editor.codeActionsOnSave": {
           "source.organizeImports": "explicit"
         },
-        "coverage-gutters.showLineCoverage": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
         "evenBetterToml.schema.enabled": false,

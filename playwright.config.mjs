@@ -1,6 +1,6 @@
 import { defineConfig } from "@playwright/test";
 
-process.env.REDSPOT_DATABASE = ".redspot.db";
+process.env.MINISPOT_DATABASE = ".minispot.db";
 
 export default defineConfig({
   use: {
@@ -8,7 +8,7 @@ export default defineConfig({
   },
   webServer: [
     {
-      command: "redspot record --playwright",
+      command: "minispot --playwright",
       stdout: "pipe",
       stderr: "pipe",
       env: {
